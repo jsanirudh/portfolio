@@ -1,0 +1,10 @@
+.App {
+  padding-top: 60px;
+}
+
+.content-container {
+  padding: 20px;
+  min-height: 100vh;
+  background-color: #57828A;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
