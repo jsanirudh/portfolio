@@ -45,7 +45,7 @@ export default function About() {
         </p>
       </div>
 
-      {/* Contact Section */}
+      {/* Contact Section - Now aligned properly */}
       <div className={styles.contactContainer}>
         <div className={styles.contactBox}>
           <h3>Contact Me</h3>

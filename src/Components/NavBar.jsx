@@ -5,12 +5,20 @@ import styles from "./navbar.module.css";
 export default function Navbar({ setActiveComponent, navBackground }) {
   return (
     <nav className={styles.navbar} style={{ background: navBackground }}>
-      <div className={styles.logo}>My Portfolio</div>
+      <Link
+        to="/"
+        className={styles.logo}
+        onClick={() => setActiveComponent("Portfolio")}
+        style={{ textDecoration: "none" }}
+      >
+        A JS
+      </Link>
       <div className={styles.navLinks}>
         <Link
           to="/about"
           className={styles.navItem}
           onClick={() => setActiveComponent("About")}
+          style={{ textDecoration: "none" }}
         >
           About
         </Link>
@@ -18,6 +26,7 @@ export default function Navbar({ setActiveComponent, navBackground }) {
           to="/experience"
           className={styles.navItem}
           onClick={() => setActiveComponent("Experience")}
+          style={{ textDecoration: "none" }}
         >
           Experience
         </Link>
@@ -25,6 +34,7 @@ export default function Navbar({ setActiveComponent, navBackground }) {
           to="/education"
           className={styles.navItem}
           onClick={() => setActiveComponent("Education")}
+          style={{ textDecoration: "none" }}
         >
           Education
         </Link>
@@ -32,6 +42,7 @@ export default function Navbar({ setActiveComponent, navBackground }) {
           to="/certificates"
           className={styles.navItem}
           onClick={() => setActiveComponent("Certificates")}
+          style={{ textDecoration: "none" }}
         >
           Certificates
         </Link>

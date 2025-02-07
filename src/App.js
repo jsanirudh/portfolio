@@ -5,11 +5,12 @@ import About from "./Components/About";
 import Experience from "./Components/Experience";
 import Education from "./Components/Education";
 import Certificates from "./Components/Certificates";
-import { BrowserRouter } from "react-router-dom"; // Import BrowserRouter
+import Portfolio from "./Components/Portfolio"; // Import Portfolio Component
+import { BrowserRouter, Route, Routes, Link } from "react-router-dom"; // Import Link
 
 function App() {
   const [activeComponent, setActiveComponent] = useState("About");
-  const [navBackground, setNavBackground] = useState("#2E5266");
+  const [navBackground, setNavBackground] = useState("#428fc2");
   const [navShadow, setNavShadow] = useState("none");
 
   useEffect(() => {
@@ -18,7 +19,7 @@ function App() {
         setNavBackground("#1B1B1B");
         setNavShadow("0px 4px 10px rgba(0, 0, 0, 0.5)");
       } else {
-        setNavBackground("#2E5266");
+        setNavBackground("#428fc2");
         setNavShadow("none");
       }
     };
@@ -29,32 +30,23 @@ function App() {
     };
   }, []);
 
-  const renderComponent = () => {
-    switch (activeComponent) {
-      case "About":
-        return <About />;
-      case "Experience":
-        return <Experience />;
-      case "Education":
-        return <Education />;
-      case "Certificates":
-        return <Certificates />;
-      default:
-        return <About />;
-    }
-  };
-
   return (
     <BrowserRouter basename="/portfolio">
-      {" "}
-      {/* Add basename */}
       <div className="App">
-        <NavBar
-          setActiveComponent={setActiveComponent}
-          navBackground={navBackground}
-          navShadow={navShadow}
-        />
-        <div className="content-container">{renderComponent()}</div>
+        <header className="navbar">
+          <NavBar
+            setActiveComponent={setActiveComponent}
+            navBackground={navBackground}
+            navShadow={navShadow}
+          />
+        </header>
+        <Routes>
+          <Route path="/" element={<Portfolio />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/experience" element={<Experience />} />
+          <Route path="/education" element={<Education />} />
+          <Route path="/certificates" element={<Certificates />} />
+        </Routes>
       </div>
     </BrowserRouter>
   );
