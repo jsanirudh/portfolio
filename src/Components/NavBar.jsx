@@ -46,6 +46,15 @@ export default function Navbar({ setActiveComponent, navBackground }) {
         >
           Certificates
         </Link>
+        <a
+          href="https://drive.google.com/file/d/1eJTievr-wpTfbbM9XWlwSffKebV7h-4z/view?usp=drive_link"
+          className={styles.navItem}
+          target="_blank"
+          rel="noopener noreferrer"
+          style={{ textDecoration: "none" }}
+        >
+          Resume
+        </a>
       </div>
     </nav>
   );

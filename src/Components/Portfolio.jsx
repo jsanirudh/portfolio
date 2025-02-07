@@ -1,11 +1,18 @@
 import React from "react";
 import styles from "./portfolio.module.css";
+import profile from "../assets/profile.jpg";
 
 export default function Portfolio() {
   return (
     <div className={styles.landingpage}>
+      <img src={profile} alt="LinkedIn" className={styles.iconFull} />
       <h1 className={styles.heading}>Hi, I'm Anirudh.</h1>
-      <h4 className={styles.subheading}>
+      <h2 className={styles.subheading}>
+        {" "}
+        - an enthusiastic Software Developer, Tempe, United States
+      </h2>
+
+      <h4 className={styles.body}>
         Full-Stack Developer with over 2 years of experience in building
         scalable and secure web applications. Proficient in frontend and backend
         technologies, delivering innovative solutions. Expertise in cloud
