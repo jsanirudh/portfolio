@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom"; // Import Link from React Router
 import styles from "./navbar.module.css";
 
 export default function Navbar({ setActiveComponent, navBackground }) {
@@ -6,30 +7,34 @@ export default function Navbar({ setActiveComponent, navBackground }) {
     <nav className={styles.navbar} style={{ background: navBackground }}>
       <div className={styles.logo}>My Portfolio</div>
       <div className={styles.navLinks}>
-        <button
-          onClick={() => setActiveComponent("About")}
+        <Link
+          to="/about"
           className={styles.navItem}
+          onClick={() => setActiveComponent("About")}
         >
           About
-        </button>
-        <button
-          onClick={() => setActiveComponent("Experience")}
+        </Link>
+        <Link
+          to="/experience"
           className={styles.navItem}
+          onClick={() => setActiveComponent("Experience")}
         >
           Experience
-        </button>
-        <button
-          onClick={() => setActiveComponent("Education")}
+        </Link>
+        <Link
+          to="/education"
           className={styles.navItem}
+          onClick={() => setActiveComponent("Education")}
         >
           Education
-        </button>
-        <button
-          onClick={() => setActiveComponent("Certificates")}
+        </Link>
+        <Link
+          to="/certificates"
           className={styles.navItem}
+          onClick={() => setActiveComponent("Certificates")}
         >
           Certificates
-        </button>
+        </Link>
       </div>
     </nav>
   );

@@ -5,6 +5,7 @@ import About from "./Components/About";
 import Experience from "./Components/Experience";
 import Education from "./Components/Education";
 import Certificates from "./Components/Certificates";
+import { BrowserRouter } from "react-router-dom"; // Import BrowserRouter
 
 function App() {
   const [activeComponent, setActiveComponent] = useState("About");
@@ -44,14 +45,18 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <NavBar
-        setActiveComponent={setActiveComponent}
-        navBackground={navBackground}
-        navShadow={navShadow}
-      />
-      <div className="content-container">{renderComponent()}</div>
-    </div>
+    <BrowserRouter basename="/portfolio">
+      {" "}
+      {/* Add basename */}
+      <div className="App">
+        <NavBar
+          setActiveComponent={setActiveComponent}
+          navBackground={navBackground}
+          navShadow={navShadow}
+        />
+        <div className="content-container">{renderComponent()}</div>
+      </div>
+    </BrowserRouter>
   );
 }
 
