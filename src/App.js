@@ -8,6 +8,7 @@ import Certificates from "./Components/Certificates";
 import Portfolio from "./Components/Portfolio"; // Import Portfolio Component
 import { BrowserRouter, Route, Routes, Link } from "react-router-dom"; // Import Link
 import Project from "./Components/Project";
+import Fade from "./Components/Fade";
 
 function App() {
   const [activeComponent, setActiveComponent] = useState("About");
@@ -41,14 +42,16 @@ function App() {
             navShadow={navShadow}
           />
         </header>
-        <Routes>
-          <Route path="/" element={<Portfolio />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/experience" element={<Experience />} />
-          <Route path="/education" element={<Education />} />
-          <Route path="/project" element={<Project />} />
-          <Route path="/certificates" element={<Certificates />} />
-        </Routes>
+        <Fade>
+          <Routes>
+            <Route path="/" element={<Portfolio />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/experience" element={<Experience />} />
+            <Route path="/education" element={<Education />} />
+            <Route path="/project" element={<Project />} />
+            <Route path="/certificates" element={<Certificates />} />
+          </Routes>
+        </Fade>
       </div>
     </BrowserRouter>
   );

@@ -1,6 +1,8 @@
 import React from "react";
 import styles from "./portfolio.module.css";
 import profile from "../assets/profile.jpg";
+import Experiencehome from "./PortfolioComponent/Experiencehome";
+import Educationhome from "./PortfolioComponent/Educationhome";
 
 export default function Portfolio() {
   return (
@@ -19,6 +21,9 @@ export default function Portfolio() {
         platforms, CI/CD pipelines, RESTful APIs, and agile methodologies.
         Recognized for improving performance and optimizing processes.
       </h4>
+
+      <Experiencehome />
+      <Educationhome />
     </div>
   );
 }

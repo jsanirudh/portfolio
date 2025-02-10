@@ -17,7 +17,6 @@ export default function Project() {
             <h1 className={styles.projectHeading}>
               Scrum Simulator (August 2023 - December 2023)
             </h1>
-            <h4 className={styles.subheading}> Developer</h4>
             <p className={styles.projectDescription}>
               Developed an innovative Java-based Auto BIM Route AI application
               focused on automated route planning for PCB design. Integrated
@@ -38,7 +37,6 @@ export default function Project() {
             <h1 className={styles.projectHeading}>
               Chatbot (August 2020 - December 2020)
             </h1>
-            <h4 className={styles.subheading}> Graduate Student Assistant</h4>
             <p className={styles.projectDescription}>
               Designed and evaluated coursework for programming courses,
               ensuring clarity and effectiveness in assignments and projects.
@@ -59,7 +57,6 @@ export default function Project() {
               Spammer Detection and Fake User Identification (January 2020 - May
               2022)
             </h1>
-            <h4 className={styles.subheading}>Software Engineer</h4>
             <p className={styles.projectDescription}>
               Developed an advanced system to detect spam and identify fake
               users on Twitter using machine learning algorithms like Random
@@ -78,7 +75,6 @@ export default function Project() {
               Online House Construction Supporting System (March 2020 - May
               2020)
             </h1>
-            <h4 className={styles.subheading}>Software Engineer</h4>
             <p className={styles.projectDescription}>
               Developed a web application to streamline house construction
               planning and management. Led cross-functional collaboration,
