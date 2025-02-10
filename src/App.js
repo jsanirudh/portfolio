@@ -7,6 +7,7 @@ import Education from "./Components/Education";
 import Certificates from "./Components/Certificates";
 import Portfolio from "./Components/Portfolio"; // Import Portfolio Component
 import { BrowserRouter, Route, Routes, Link } from "react-router-dom"; // Import Link
+import Project from "./Components/Project";
 
 function App() {
   const [activeComponent, setActiveComponent] = useState("About");
@@ -45,6 +46,7 @@ function App() {
           <Route path="/about" element={<About />} />
           <Route path="/experience" element={<Experience />} />
           <Route path="/education" element={<Education />} />
+          <Route path="/project" element={<Project />} />
           <Route path="/certificates" element={<Certificates />} />
         </Routes>
       </div>

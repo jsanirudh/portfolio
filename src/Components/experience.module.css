@@ -35,6 +35,12 @@
   flex: 1;
   text-align: left;
 }
+.mainheading {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #102d3d;
+  margin-bottom: 0.1px;
+}
 
 .experienceHeading {
   font-size: 2rem;
@@ -59,4 +65,5 @@
   font-size: 1.1rem;
   color: #333;
   line-height: 1.6;
+  text-align: justify;
 }

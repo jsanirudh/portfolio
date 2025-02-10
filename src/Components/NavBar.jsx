@@ -39,6 +39,14 @@ export default function Navbar({ setActiveComponent, navBackground }) {
           Education
         </Link>
         <Link
+          to="/project"
+          className={styles.navItem}
+          onClick={() => setActiveComponent("Project")}
+          style={{ textDecoration: "none" }}
+        >
+          Project
+        </Link>
+        <Link
           to="/certificates"
           className={styles.navItem}
           onClick={() => setActiveComponent("Certificates")}

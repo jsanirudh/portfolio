@@ -9,7 +9,7 @@
   margin: 0%;
 }
 
-.educationContainer {
+.projectContainer {
   display: flex;
   align-items: center;
   background: #f4f7f8;
@@ -20,15 +20,20 @@
   max-width: 1200px;
   width: 100%;
 }
-.educationContainer:hover {
+.projectContainer:hover {
   transform: scale(1.02) translateY(-2px);
   transition: transform 0.2s ease-in-out, background 0.2s ease-in-out;
 }
 
-.educationLogo {
+.projectLogo {
   width: 100px;
   height: auto;
   margin-right: 20px;
+}
+
+.projectContent {
+  flex: 1;
+  text-align: left;
 }
 .mainheading {
   font-size: 3rem;
@@ -37,26 +42,26 @@
   margin-bottom: 0.1px;
 }
 
-.educationContent {
-  flex: 1;
-  text-align: left;
-}
-
-.educationHeading {
+.projectHeading {
   font-size: 2rem;
   font-weight: bold;
   color: #2e5266;
-  margin-bottom: 10px;
+  margin-bottom: 0.1px;
 }
 
-.educationSubheading {
+.projectSubheading {
   font-size: 1rem;
   font-weight: 500;
   color: #555;
   margin-bottom: 8px;
 }
-
-.educationDescription {
+.subheading {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #2e5266;
+  margin-bottom: 10px;
+}
+.projectDescription {
   font-size: 1.1rem;
   color: #333;
   line-height: 1.6;
