@@ -67,3 +67,37 @@
   line-height: 1.6;
   text-align: justify;
 }
+
+/* GitHub Button Styling */
+.githubButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #428fc2; /* Bright blue */
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+  margin-top: 15px;
+  width: 100%; /* Make it stretch across the container */
+  max-width: 200px;
+  height: 25px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/* GitHub Button Hover Effect */
+.githubButton:hover {
+  background-color: #0099e5; /* Slightly darker blue */
+  transform: scale(1.02);
+}
+
+/* GitHub Icon */
+.githubIcon {
+  margin-right: 10px;
+  font-size: 20px;
+}

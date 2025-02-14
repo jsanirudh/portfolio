@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./project.module.css";
+import { FaGithub } from "react-icons/fa"; // Import GitHub icon
 import Spammer from "../assets/spammer.webp";
 import Scrum from "../assets/Scrumsimulator.webp";
 import OnlineHouse from "../assets/OnlineHouse.webp";
@@ -9,8 +10,9 @@ export default function Project() {
   return (
     <div className={styles.mainContainer}>
       <div>
-        <h1 className={styles.mainheading}>Project </h1>
-        {/* Auto BIM Route AI Section */}
+        <h1 className={styles.mainheading}>Projects</h1>
+
+        {/* Scrum Simulator */}
         <div className={styles.projectContainer}>
           <img src={Scrum} alt="Scrum" className={styles.projectLogo} />
           <div className={styles.projectContent}>
@@ -18,38 +20,62 @@ export default function Project() {
               Scrum Simulator (August 2023 - December 2023)
             </h1>
             <p className={styles.projectDescription}>
-              Developed an innovative Java-based Auto BIM Route AI application
-              focused on automated route planning for PCB design. Integrated
-              advanced algorithms to visualize and optimize connections between
-              nodes, enhancing pathfinding efficiency. Designed and implemented
-              features that dynamically display preferred paths on the user
-              interface, ensuring smooth zooming and precise drawing of paths.
-              Incorporated start/stop controls, providing users with greater
-              control and flexibility in designing and visualizing PCB routes.
+              Collaborated in the development of 'Scrum Simulator,' an
+              innovative software tool designed to emulate Scrum agile
+              methodology within a virtual environment. This project entailed
+              architecting a user-centric platform to facilitate exploration and
+              mastery of Scrum roles, ceremonies, and artifacts. Key features
+              included robust user management, authentic role simulation,
+              dynamic event handling, and comprehensive reporting capabilities.
+              This venture underscored my proficiency in software engineering,
+              agile frameworks, and project management, effectively synthesizing
+              theoretical Scrum principles with their practical, real-world
+              application.
             </p>
+            {/* GitHub Button */}
+            <a
+              href="https://github.com/jsanirudh/ScrumSimulator"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.githubButton}
+            >
+              <FaGithub className={styles.githubIcon} /> View on GitHub
+            </a>
           </div>
         </div>
 
-        {/* Arizona State University Section */}
+        {/* Chatbot */}
         <div className={styles.projectContainer}>
-          <img src={chatbot} alt="chatbot" className={styles.projectLogo} />
+          <img src={chatbot} alt="Chatbot" className={styles.projectLogo} />
           <div className={styles.projectContent}>
             <h1 className={styles.projectHeading}>
               Chatbot (August 2020 - December 2020)
             </h1>
             <p className={styles.projectDescription}>
-              Designed and evaluated coursework for programming courses,
-              ensuring clarity and effectiveness in assignments and projects.
-              Delivered lectures to enhance student understanding and
-              engagement. Provided guidance through office hours, helping
-              students grasp programming concepts and improve problem-solving
-              skills. Led coding workshops and peer reviews, fostering a
-              collaborative learning environment.
+              Developed an interactive chatbot in Google Colab, leveraging
+              advanced Natural Language Processing (NLP) techniques to enhance
+              response accuracy and user experience. Built using Python in a
+              Jupyter Notebook, the chatbot integrates a custom knowledge base
+              (chatbot.txt) to provide contextually relevant answers for data
+              science-related queries. Implemented NLTK, spaCy, and Hugging
+              Face’s Transformers for tokenization, named entity recognition,
+              and semantic understanding, enabling more natural and intelligent
+              conversations. This project showcases my expertise in Machine
+              Learning, NLP, and AI-driven chatbot development, focusing on
+              response optimization and user interaction.
             </p>
+            <a
+              href="https://github.com/jsanirudh/Chatbot"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.githubButton}
+            >
+              <FaGithub className={styles.githubIcon} /> View on GitHub
+            </a>
           </div>
         </div>
 
-        {/* Tata Consultancy Services Section */}
+        {/* Spammer Detection */}
         <div className={styles.projectContainer}>
           <img src={Spammer} alt="Spammer" className={styles.projectLogo} />
           <div className={styles.projectContent}>
@@ -64,12 +90,26 @@ export default function Project() {
               approach to design, testing, and iterative optimization. Utilized
               Java, JSP, HTML, CSS, and JavaScript for implementation, with
               MySQL for database management, ensuring enhanced accuracy,
-              security, and efficiency.
+              security, and efficiency
             </p>
+            <a
+              href="https://github.com/jsanirudh/Spammer-Detection-and-Fake-User-Identification"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.githubButton}
+            >
+              <FaGithub className={styles.githubIcon} /> View on GitHub
+            </a>
           </div>
         </div>
+
+        {/* Online House Construction */}
         <div className={styles.projectContainer}>
-          <img src={OnlineHouse} alt="TCS" className={styles.projectLogo} />
+          <img
+            src={OnlineHouse}
+            alt="Online House Construction"
+            className={styles.projectLogo}
+          />
           <div className={styles.projectContent}>
             <h1 className={styles.projectHeading}>
               Online House Construction Supporting System (March 2020 - May
@@ -84,6 +124,14 @@ export default function Project() {
               and performance, while optimizing database efficiency for seamless
               user interaction.
             </p>
+            <a
+              href="https://github.com/jsanirudh/Online-House-Support-Construction-System"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.githubButton}
+            >
+              <FaGithub className={styles.githubIcon} /> View on GitHub
+            </a>
           </div>
         </div>
       </div>
