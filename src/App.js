@@ -6,7 +6,7 @@ import Experience from "./Components/Experience";
 import Education from "./Components/Education";
 import Certificates from "./Components/Certificates";
 import Portfolio from "./Components/Portfolio"; // Import Portfolio Component
-import { BrowserRouter, Route, Routes, Link } from "react-router-dom"; // Import Link
+import { HashRouter, Routes, Route } from "react-router-dom"; // Import Routes & Route
 import Project from "./Components/Project";
 import Fade from "./Components/Fade";
 
@@ -33,7 +33,7 @@ function App() {
   }, []);
 
   return (
-    <BrowserRouter basename="/portfolio">
+    <HashRouter>
       <div className="App">
         <header className="navbar">
           <NavBar
@@ -53,7 +53,7 @@ function App() {
           </Routes>
         </Fade>
       </div>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
