@@ -9,6 +9,7 @@ export default function Portfolio() {
   const [text, setText] = useState("");
   const [wordIndex, setWordIndex] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
+  const [showButton, setShowButton] = useState(false);
   const typingSpeed = 100;
   const deletingSpeed = 50;
   const pauseTime = 1000;
@@ -39,6 +40,24 @@ export default function Portfolio() {
     return () => clearTimeout(typingTimeout);
   }, [text, isDeleting, wordIndex]);
 
+  // Show button when scrolling down
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 300) {
+        setShowButton(true);
+      } else {
+        setShowButton(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <div className={styles.landingpage}>
       <img src={profile} alt="Profile" className={styles.iconFull} />
@@ -58,6 +77,13 @@ export default function Portfolio() {
 
       <Experiencehome />
       <Educationhome />
+
+      {/* Scroll-to-Top Button */}
+      {showButton && (
+        <button onClick={scrollToTop} className={styles.scrollTop}>
+          ↑
+        </button>
+      )}
     </div>
   );
 }
