@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.cb515608.css",
-    "main.js": "/portfolio/static/js/main.c56ce0b5.js",
+    "main.css": "/portfolio/static/css/main.635deb91.css",
+    "main.js": "/portfolio/static/js/main.7a54b1bb.js",
     "static/js/488.9561f9b8.chunk.js": "/portfolio/static/js/488.9561f9b8.chunk.js",
     "static/media/OnlineHouse.webp": "/portfolio/static/media/OnlineHouse.fb261cb571af9543c6a5.webp",
     "static/media/Scrumsimulator.webp": "/portfolio/static/media/Scrumsimulator.e1a4e85e0bf8a17fdbb1.webp",
@@ -18,12 +18,12 @@
     "static/media/azure.jpg": "/portfolio/static/media/azure.1040e86e2d062a66dab8.jpg",
     "static/media/github.png": "/portfolio/static/media/github.746ec8f0bc97208f903e.png",
     "index.html": "/portfolio/index.html",
-    "main.cb515608.css.map": "/portfolio/static/css/main.cb515608.css.map",
-    "main.c56ce0b5.js.map": "/portfolio/static/js/main.c56ce0b5.js.map",
+    "main.635deb91.css.map": "/portfolio/static/css/main.635deb91.css.map",
+    "main.7a54b1bb.js.map": "/portfolio/static/js/main.7a54b1bb.js.map",
     "488.9561f9b8.chunk.js.map": "/portfolio/static/js/488.9561f9b8.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.cb515608.css",
-    "static/js/main.c56ce0b5.js"
+    "static/css/main.635deb91.css",
+    "static/js/main.7a54b1bb.js"
   ]
 }
